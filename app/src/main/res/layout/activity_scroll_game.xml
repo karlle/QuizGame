@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="easy.com.quizgame.scrollGameActivity"
+    android:id="@+id/Layout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/questionView2"
+        android:layout_below="@+id/feedbackView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="10pt"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Good Luck!"
+        android:id="@+id/feedbackView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:textSize="10pt"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:id="@+id/numberWrongs"
+        android:layout_below="@+id/questionView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="10pt"
+        android:layout_marginBottom="25pt"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:id="@+id/nextQuestion"
+        android:textSize="10pt"
+        android:onClick="answer"
+        android:layout_alignTop="@+id/numberWrongs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="10pt"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/nextQuestion"
+        android:layout_alignRight="@+id/nextQuestion"
+        android:layout_alignEnd="@+id/nextQuestion">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                >
+
+        <Button
+        android:layout_width="match_parent"
+            android:layout_height="60pt"
+            android:text="Egypt"
+            android:id="@+id/button"
+            android:layout_below="@+id/nextQuestion"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/questionView2"
+            android:layout_alignEnd="@+id/questionView2"
+            android:textSize="10pt"
+            android:onClick="answer"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60pt"
+        android:text="Zimbabwe"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:singleLine="false"
+        android:textSize="10pt"
+        android:onClick="answer"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60pt"
+                    android:text="Kenya"
+                    android:id="@+id/button3"
+                    android:layout_below="@+id/button2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    android:singleLine="false"
+                    android:textSize="10pt"
+                    android:onClick="answer"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        android:text="Liberia"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:textSize="10pt"
+        android:onClick="answer"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        android:text="South Africa"
+        android:id="@+id/button5"
+        android:textSize="10pt"
+        android:onClick="answer"
+        android:layout_above="@+id/button6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60pt"
+                    android:text="Chile"
+                    android:id="@+id/button6"
+                    android:textSize="10pt"
+                    android:onClick="answer"
+                    android:layout_above="@+id/button7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60pt"
+                    android:text="Indonesia"
+                    android:id="@+id/button7"
+                    android:textSize="10pt"
+                    android:onClick="answer"
+                    android:layout_above="@+id/button8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60pt"
+                    android:text="Bangladesh"
+                    android:id="@+id/button8"
+                    android:textSize="10pt"
+                    android:onClick="answer"
+                    android:layout_above="@+id/button9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60pt"
+                    android:text="Colombia"
+                    android:id="@+id/button9"
+                    android:textSize="10pt"
+                    android:onClick="answer"
+                    android:layout_above="@+id/nextQuestion"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
