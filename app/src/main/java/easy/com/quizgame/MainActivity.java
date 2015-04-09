@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
+    //This is great game, yo
+
     private int currentQuestion;
     private String [] questions;
     private String [] answers;
